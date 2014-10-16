@@ -1,10 +1,15 @@
-// Fig. 3.7: GradeBook.java
-// GradeBook class that contains a courseName instance variable
-// and methods to set and get its value.
+// Fig. 3.10: GradeBook.java
+// GradeBook class with a constructor to initialize the course name.
 
 public class GradeBook
 {
   private String courseName; // course name for this GradeBook
+
+  // constructor initializes courseName with String argument
+  public GradeBook( String name ) // constructor name is class name
+  {
+    courseName = name; // initializes courseName
+  } // end constructor
 
   // method to set the course name
   public void setCourseName( String name )
@@ -21,8 +26,8 @@ public class GradeBook
   // display a welcome message to the GradeBook user
   public void displayMessage()
   {
-    // calls getCourseName to get the name of
-    // the course this GradeBook represents
+    // this statement calls getCourseName to get the
+    // name of the course this GradeBook represents
     System.out.printf( "Welcome to the grade book for\n%s!\n",
     getCourseName() );
   } // end method displayMessage
